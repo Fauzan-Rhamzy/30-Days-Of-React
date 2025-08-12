@@ -1,26 +1,3 @@
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
-]
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
-]
 
 // 1
 const emptyArr = []
@@ -100,4 +77,23 @@ console.log(itCompanies.reverse());
 console.log(itCompanies.slice(0, 3))
 
 // 18
-console.log(itCompanies.slice(itCompanies.length-1, 3))
+console.log(itCompanies.slice(itCompanies.length-3, itCompanies.length))
+
+// 19
+console.log(itCompanies.slice(parseInt(itCompanies.length/2), parseInt(itCompanies.length/2)+1));
+
+// 20
+console.log(itCompanies.shift());
+console.log(itCompanies.toString());
+
+// 21
+itCompanies.splice(parseInt(itCompanies.length/2), 1);
+console.log(itCompanies.toString());
+
+// 22
+itCompanies.pop();
+console.log(itCompanies.toString());
+
+// 23
+itCompanies.pop()
+console.log(itCompanies.toString());
