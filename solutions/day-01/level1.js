@@ -64,3 +64,40 @@ for (let index = 0; index < itCompanies.length; index++) {
 }
 
 // 12
+console.log(itCompanies.join(", "));
+
+// 13
+if (itCompanies.includes("FACEBOOK")) {
+  console.log("Facebook");
+} else {
+  console.log("company is not found");
+}
+
+// 14
+for (let index = 0; index < itCompanies.length; index++) {
+  let counter = 0;
+  const word = itCompanies[index];
+  for (const letter in word) {
+    if (word[letter] == "O") {
+      counter++;
+    }
+    
+  }
+  if (counter>1) {
+    itCompanies.splice(index, 1);
+    index--;
+  }
+}
+console.log(itCompanies.toString());
+
+// 15
+console.log(itCompanies.sort());
+
+// 16
+console.log(itCompanies.reverse());
+
+// 17
+console.log(itCompanies.slice(0, 3))
+
+// 18
+console.log(itCompanies.slice(itCompanies.length-1, 3))
